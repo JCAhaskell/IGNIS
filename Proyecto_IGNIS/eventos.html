@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- ========================================
+     BLOQUE 1: CONFIGURACIÓN HEAD
+     ======================================== -->
+<head>
+    <title>IGNIS - Eventos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!-- ========================================
+     BLOQUE 2: HEADER Y NAVEGACIÓN
+     ======================================== -->
+<body>
+    <!-- Información del usuario -->
+    <div id="userInfo" class="user-info">
+        <span id="userWelcome"></span>
+        <button class="logout-btn" onclick="cerrarSesion()" title="Cerrar Sesión">⏻</button>
+    </div>
+    
+    <!-- Menú móvil -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="nav-menu" id="navMenu">
+        <a href="inicio.html">Inicio</a>
+        <a href="vinos.html">Vinos</a>
+        <a href="bodega.html">Bodega</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="historia.html">Historia</a>
+        <a href="galeria.html">Galería</a>
+        <a href="faq.html">FAQ</a>
+        <a href="eventos.html" class="active">Eventos</a>
+        <a href="blog.html">Blog</a>
+        <a href="premios.html">Premios</a>
+        <a href="elaboracion.html">Elaboración</a>
+    </nav>
+
+    <!-- Contenido principal protegido -->
+    <div id="mainContent" style="display: none;">
+        <header class="header-index">
+            <!-- Logo centrado -->
+            <div class="logo-container-centered">
+                <a href="inicio.html" class="logo-link">
+                    <img src="img/logo.png" alt="Logo IGNIS" class="logo-centered">
+                    <h1 class="nombre-empresa">IGNIS</h1>
+                </a>
+            </div>
+        </header>
+
+        <!-- ========================================
+             BLOQUE 3: CONTENIDO PRINCIPAL
+             ======================================== -->
+        <main>
+        <div class="container">
+            <h1>Eventos y Catas</h1>
+            <p class="intro-text">Descubre nuestros próximos eventos, catas y experiencias exclusivas en torno al mundo del vino.</p>
+                
+            <!-- ========================================
+                 BLOQUE 4: EVENTOS DESTACADOS
+                 ======================================== -->
+            <section class="eventos-destacados">
+                <h2>Eventos Destacados</h2>
+                <div class="eventos-grid">
+                    <article class="evento-card">
+                        <div class="evento-fecha">
+                            <span class="dia">15</span>
+                            <span class="mes">JUL</span>
+                        </div>
+                        <div class="evento-info">
+                            <h3>Cata Vertical de Reservas</h3>
+                            <p class="evento-detalles">Bodega IGNIS, Sala de Barricas</p>
+                            <p class="evento-detalles">18:00 - 21:00</p>
+                            <p>Una experiencia única para degustar diferentes añadas de nuestros vinos reserva y comprender la evolución del vino a través del tiempo.</p>
+                            <button class="btn-reservar">Reservar Plaza</button>
+                        </div>
+                    </article>
+                    
+                    <article class="evento-card">
+                        <div class="evento-fecha">
+                            <span class="dia">22</span>
+                            <span class="mes">AGO</span>
+                        </div>
+                        <div class="evento-info">
+                            <h3>Maridaje Gourmet</h3>
+                            <p class="evento-detalles"><i class="fas fa-map-marker-alt"></i> Restaurante El Lagar</p>
+                            <p class="evento-detalles"><i class="fas fa-clock"></i> 20:30 - 23:00</p>
+                            <p>Cena exclusiva con 5 tiempos, cada uno maridado con un vino diferente de nuestra colección premium, explicado por nuestro enólogo.</p>
+                            <button class="btn-reservar">Reservar Plaza</button>
+                        </div>
+                    </article>
+                    
+                    <article class="evento-card">
+                        <div class="evento-fecha">
+                            <span class="dia">10</span>
+                            <span class="mes">SEP</span>
+                        </div>
+                        <div class="evento-info">
+                            <h3>Vendimia Experiencial</h3>
+                            <p class="evento-detalles"><i class="fas fa-map-marker-alt"></i> Viñedos IGNIS</p>
+                            <p class="evento-detalles"><i class="fas fa-clock"></i> 09:00 - 14:00</p>
+                            <p>Participa en nuestra vendimia anual. Aprende el proceso de selección de uva y disfruta de un almuerzo campestre entre viñedos con nuestros vinos.</p>
+                            <button class="btn-reservar">Reservar Plaza</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+                
+            <!-- ========================================
+                 BLOQUE 5: CALENDARIO DE EVENTOS
+                 ======================================== -->
+            <section class="calendario-eventos">
+                <h2>Calendario de Eventos</h2>
+                <div class="filtros-calendario">
+                    <button class="filtro-mes activo">Todos</button>
+                    <button class="filtro-mes">Julio</button>
+                    <button class="filtro-mes">Agosto</button>
+                    <button class="filtro-mes">Septiembre</button>
+                    <button class="filtro-mes">Octubre</button>
+                </div>
+                
+                <div class="tabla-eventos">
+                    <div class="evento-fila">
+                        <div class="evento-fecha-small">15 JUL</div>
+                        <div class="evento-nombre">Cata Vertical de Reservas</div>
+                        <div class="evento-lugar">Bodega IGNIS</div>
+                        <div class="evento-accion"><button class="btn-detalles">Ver detalles</button></div>
+                    </div>
+                    
+                    <div class="evento-fila">
+                        <div class="evento-fecha-small">22 AGO</div>
+                        <div class="evento-nombre">Maridaje Gourmet</div>
+                        <div class="evento-lugar">Restaurante El Lagar</div>
+                        <div class="evento-accion"><button class="btn-detalles">Ver detalles</button></div>
+                    </div>
+                    
+                    <div class="evento-fila">
+                        <div class="evento-fecha-small">10 SEP</div>
+                        <div class="evento-nombre">Vendimia Experiencial</div>
+                        <div class="evento-lugar">Viñedos IGNIS</div>
+                        <div class="evento-accion"><button class="btn-detalles">Ver detalles</button></div>
+                    </div>
+                    
+                    <div class="evento-fila">
+                        <div class="evento-fecha-small">25 SEP</div>
+                        <div class="evento-nombre">Masterclass de Vinos Tintos</div>
+                        <div class="evento-lugar">Sala de Catas IGNIS</div>
+                        <div class="evento-accion"><button class="btn-detalles">Ver detalles</button></div>
+                    </div>
+                    
+                    <div class="evento-fila">
+                        <div class="evento-fecha-small">08 OCT</div>
+                        <div class="evento-nombre">Presentación Nueva Añada</div>
+                        <div class="evento-lugar">Hotel Royal</div>
+                        <div class="evento-accion"><button class="btn-detalles">Ver detalles</button></div>
+                    </div>
+                </div>
+            </section>
+                
+            <!-- ========================================
+                 BLOQUE 6: SUSCRIPCIÓN A EVENTOS
+                 ======================================== -->
+            <section class="suscripcion-eventos">
+                <h2>Mantente Informado</h2>
+                <p>Suscríbete a nuestro boletín de eventos para recibir información exclusiva y acceso prioritario a nuestras catas y experiencias.</p>
+                
+                <form class="form-suscripcion">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preferencias">Intereses:</label>
+                        <select id="preferencias" name="preferencias">
+                            <option value="todos">Todos los eventos</option>
+                            <option value="catas">Catas y degustaciones</option>
+                            <option value="maridajes">Maridajes y gastronomía</option>
+                            <option value="visitas">Visitas y experiencias</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn-suscribir">Suscribirme</button>
+                </form>
+            </section>
+        </div>
+        </main>
+
+        <!-- ========================================
+             BLOQUE 7: FOOTER
+             ======================================== -->
+        <footer>
+            <p>1950 IGNIS - BODEGA SELECTA</p>
+            <marquee>Descuento del 15% en compras mayores a S/200</marquee>
+        </footer>
+    </div>
+
+    <!-- ========================================
+         BLOQUE 8: SCRIPTS
+         ======================================== -->
+    <script src="js/gestorUsuarios.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/eventos.js" defer></script>
+    <script src="js/login.js" defer></script>
+    
+
+</body>
+</html>

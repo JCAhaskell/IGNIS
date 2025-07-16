@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- ========================================
+     PRIMERA ENTREGA - PUNTO C: ESTRUCTURA COMPLETA
+     Encabezado, menú, cuerpo y pie implementados
+     ======================================== -->
+<!-- ========================================
+     BLOQUE 1: CONFIGURACIÓN HEAD
+     ======================================== -->
+<head>
+    <title>IGNIS - Inicio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/gestorUsuarios.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/inicio.js" defer></script>
+</head>
+
+<!-- ========================================
+     PRIMERA ENTREGA - PUNTO K: MENÚS RESPONSIVOS
+     Navegación móvil y desktop implementada
+     ======================================== -->
+<!-- ========================================
+     BLOQUE 2: NAVEGACIÓN Y AUTENTICACIÓN
+     ======================================== -->
+<body>
+    <!-- Información del usuario -->
+    <div id="userInfo" class="user-info">
+        <span id="userWelcome"></span>
+        <button class="logout-btn" onclick="cerrarSesion()" title="Cerrar Sesión">⏻</button>
+    </div>
+    
+    <!-- Menú móvil -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="nav-menu" id="navMenu">
+        <a href="inicio.html" class="active">Inicio</a>
+        <a href="vinos.html">Vinos</a>
+        <a href="bodega.html">Bodega</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="historia.html">Historia</a>
+        <a href="galeria.html">Galería</a>
+        <a href="faq.html">FAQ</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="blog.html">Blog</a>
+        <a href="premios.html">Premios</a>
+        <a href="elaboracion.html">Elaboración</a>
+    </nav>
+    
+    <!-- ========================================
+         BLOQUE 3: CONTENIDO PRINCIPAL
+         ======================================== -->
+    <!-- Contenido principal visible inmediatamente -->
+    <div id="mainContent" class="protected-content" style="display: block;">
+
+        
+        <!-- Header con logo -->
+        <header class="header-index">
+            <div class="logo-container-centered">
+                <img src="img/logo.png" alt="Logo IGNIS" class="logo-centered">
+                <h1 class="nombre-empresa">IGNIS</h1>
+            </div>
+        </header>
+
+        <!-- ========================================
+                 BLOQUE 4: SECCIONES DE CONTENIDO
+                 ======================================== -->
+        <main>
+            <!-- ========================================
+                 PRIMERA ENTREGA - PUNTO E: CONTENIDO MULTIMEDIA
+                 Video HTML5 con controles y formatos múltiples
+                 ======================================== -->
+            <!-- ========================================
+                 BLOQUE 4: CONTENIDO MULTIMEDIA
+                 ======================================== -->
+            <!-- Video de presentación -->
+            <section class="video-presentacion">
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <video src="img/vid3.mp4" class="video" controls></video>
+                    </div>
+                </div>
+                <div class="presentacion-texto">
+                    <h2>Nuestra Pasión por el Vino</h2>
+                    <p>Desde 1950, IGNIS ha sido sinónimo de excelencia en la elaboración de vinos. Nuestra bodega, ubicada en el corazón de los mejores viñedos, combina tradición familiar y tecnología moderna para crear vinos excepcionales que capturan la esencia de nuestra tierra.</p>
+                    <p>Cada botella de IGNIS representa nuestra dedicación a la calidad y el respeto por el proceso natural de vinificación. Nuestros enólogos seleccionan cuidadosamente las mejores uvas para crear vinos con carácter, equilibrio y expresión única del terroir.</p>
+                    <p>Te invitamos a descubrir nuestra colección de vinos premiados, desde nuestros elegantes tintos reserva hasta nuestros refrescantes blancos y rosados, pasando por nuestros exclusivos espumosos y dulces moscateles.</p>
+                </div>
+            </section>
+            
+            <!-- Carrusel de vinos -->
+            <section class="ruleta-vinos">
+                <h2>Descubre Nuestros Vinos</h2>
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- El contenido se cargará dinámicamente por JavaScript -->
+                        <!-- Contenido inicial visible inmediatamente -->
+                        <div class="carousel-slide">
+                            <img src="img/vinoTinto.png" alt="Vino Tinto" class="img-fluid">
+                            <h3>Tinto Crianza</h3>
+                            <p class="vino-tipo-carrusel">Tinto</p>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/vinoBlanco.png" alt="Vino Blanco" class="img-fluid">
+                            <h3>Blanco Joven</h3>
+                            <p class="vino-tipo-carrusel">Blanco</p>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/vinoRosado.png" alt="Vino Rosado" class="img-fluid">
+                            <h3>Rosado de Lagrima</h3>
+                            <p class="vino-tipo-carrusel">Rosado</p>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/vinoEspumoso.png" alt="Vino Espumoso" class="img-fluid">
+                            <h3>Espumoso Brut</h3>
+                            <p class="vino-tipo-carrusel">Espumoso</p>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/vinoDulce.png" alt="Vino Dulce" class="img-fluid">
+                            <h3>Dulce Moscatel</h3>
+                            <p class="vino-tipo-carrusel">Dulce</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Redes sociales -->
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/profile.php?id=61576981850683">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- ========================================
+             BLOQUE 5: FOOTER
+             ======================================== -->
+        <footer>
+            <p>&copy; 2023 IGNIS - Bodega Selecta. Todos los derechos reservados.</p>
+            <div class="marquee">
+                <span>🍷 Descubre nuestros vinos premiados | 🎯 Envío gratuito en pedidos superiores a 50€ | 🌟 Visitas guiadas todos los fines de semana | 🍇 Nuevas cosechas disponibles</span>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- ========================================
+         BLOQUE 6: SCRIPTS
+         ======================================== -->
+    </body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- ========================================
+     BLOQUE 1: CONFIGURACIÓN HEAD
+     ======================================== -->
+    <head>
+        <title>IGNIS - Blog</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    
+    <!-- ========================================
+         BLOQUE 2: HEADER Y NAVEGACIÓN
+         ======================================== -->
+    <body>
+    <!-- Información del usuario -->
+    <div id="userInfo" class="user-info">
+        <span id="userWelcome"></span>
+        <button class="logout-btn" onclick="cerrarSesion()" title="Cerrar Sesión">⏻</button>
+    </div>
+    
+    <!-- Menú móvil -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="nav-menu" id="navMenu">
+        <a href="inicio.html">Inicio</a>
+        <a href="vinos.html">Vinos</a>
+        <a href="bodega.html">Bodega</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="historia.html">Historia</a>
+        <a href="galeria.html">Galería</a>
+        <a href="faq.html">FAQ</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="premios.html">Premios</a>
+        <a href="elaboracion.html">Elaboración</a>
+    </nav>
+
+    <!-- Contenido principal protegido -->
+    <div id="mainContent" style="display: none;">
+        <header class="header-index">
+            <!-- Logo centrado -->
+            <div class="logo-container-centered">
+                <a href="inicio.html" class="logo-link">
+                    <img src="img/logo.png" alt="Logo IGNIS" class="logo-centered">
+                    <h1 class="nombre-empresa">IGNIS</h1>
+                </a>
+            </div>
+        </header>
+
+        <!-- ========================================
+             BLOQUE 3: CONTENIDO PRINCIPAL
+             ======================================== -->
+        <main>
+            <div class="container">
+                <h1>Blog IGNIS</h1>
+                <p class="intro-text">Descubre nuestros artículos sobre el fascinante mundo del vino, tendencias, consejos de cata y curiosidades enológicas.</p>
+                
+                <!-- ========================================
+                     BLOQUE 4: ARTÍCULOS DESTACADOS
+                     ======================================== -->
+                <section class="articulos-destacados">
+                    <h2>⭐ Artículos Destacados</h2>
+                    <div class="blog-grid">
+                        <article class="blog-card destacado">
+                            <div class="blog-imagen">
+                                <img src="img/vinoTinto.png" alt="Maridaje perfecto" class="img-fluid">
+                            </div>
+                            <div class="blog-contenido">
+                                <div class="blog-meta">
+                                    <span class="blog-categoria">Maridaje</span>
+                                    <span class="blog-fecha">12 Jun 2025</span>
+                                </div>
+                                <h3>El maridaje perfecto: Vinos tintos y quesos artesanales</h3>
+                                <p>Descubre las combinaciones ideales entre nuestros vinos tintos reserva y una selección de quesos artesanales que potencian sus sabores y aromas.</p>
+                                <a href="#" class="btn-leer-mas">Leer más</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                
+                <!-- ========================================
+                     BLOQUE 5: ARTÍCULOS PRINCIPALES
+                     ======================================== -->
+                <section class="blog-principal">
+                    <div class="blog-filtros">
+                        <h2>Categorías</h2>
+                        <div class="filtros-blog">
+                            <button class="filtro-blog activo">Todos</button>
+                            <button class="filtro-blog">Maridaje</button>
+                            <button class="filtro-blog">Cata</button>
+                            <button class="filtro-blog">Viticultura</button>
+                            <button class="filtro-blog">Tendencias</button>
+                            <button class="filtro-blog">Entrevistas</button>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-articulos">
+                        <article class="blog-card">
+                            <div class="blog-imagen">
+                                <img src="img/vinoBlanco2.png" alt="Cata de vinos blancos" class="img-fluid">
+                            </div>
+                            <div class="blog-contenido">
+                                <div class="blog-meta">
+                                    <span class="blog-categoria">Cata</span>
+                                    <span class="blog-fecha">5 Jun 2025</span>
+                                </div>
+                                <h3>Guía definitiva para catar vinos blancos</h3>
+                                <p>Aprende los secretos para apreciar todos los matices de un buen vino blanco: temperatura, copa adecuada, aromas y sabores característicos.</p>
+                                <a href="#" class="btn-leer-mas">Leer más</a>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-card">
+                            <div class="blog-imagen">
+                                <img src="img/vinoRosado.png" alt="Tendencias en vinos rosados" class="img-fluid">
+                            </div>
+                            <div class="blog-contenido">
+                                <div class="blog-meta">
+                                    <span class="blog-categoria">Tendencias</span>
+                                    <span class="blog-fecha">28 May 2025</span>
+                                </div>
+                                <h3>Tendencias en vinos rosados para este verano</h3>
+                                <p>Descubre las nuevas tendencias en vinos rosados que marcarán la temporada estival: variedades, estilos y ocasiones perfectas para disfrutarlos.</p>
+                                <a href="#" class="btn-leer-mas">Leer más</a>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-card">
+                            <div class="blog-imagen">
+                                <img src="img/vinoEspumoso.png" alt="Entrevista a enólogo" class="img-fluid">
+                            </div>
+                            <div class="blog-contenido">
+                                <div class="blog-meta">
+                                    <span class="blog-categoria">Entrevistas</span>
+                                    <span class="blog-fecha">15 May 2025</span>
+                                </div>
+                                <h3>Entrevista con nuestro enólogo jefe: El arte de crear espumosos</h3>
+                                <p>Conversamos con Carlos Mendoza, nuestro enólogo jefe, sobre los secretos detrás de la elaboración de nuestros aclamados vinos espumosos.</p>
+                                <a href="#" class="btn-leer-mas">Leer más</a>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-card">
+                            <div class="blog-imagen">
+                                <img src="img/vinoDulce.png" alt="Viticultura sostenible" class="img-fluid">
+                            </div>
+                            <div class="blog-contenido">
+                                <div class="blog-meta">
+                                    <span class="blog-categoria">Viticultura</span>
+                                    <span class="blog-fecha">2 May 2025</span>
+                                </div>
+                                <h3>Viticultura sostenible: Nuestro compromiso con el medio ambiente</h3>
+                                <p>Conoce las prácticas sostenibles que implementamos en nuestros viñedos para preservar el ecosistema y mejorar la calidad de nuestros vinos.</p>
+                                <a href="#" class="btn-leer-mas">Leer más</a>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- Paginación -->
+                    <div class="blog-paginacion">
+                        <a href="#" class="pagina activa">1</a>
+                        <a href="#" class="pagina">2</a>
+                        <a href="#" class="pagina">3</a>
+                        <a href="#" class="pagina-siguiente">→</a>
+                    </div>
+                </section>
+                
+                <!-- ========================================
+                     BLOQUE 6: NEWSLETTER
+                     ======================================== -->
+                <section class="blog-newsletter">
+                    <div class="newsletter-container">
+                        <div class="newsletter-info">
+                            <h2>📧 Suscríbete a nuestro Newsletter</h2>
+                            <p>Recibe en tu correo los últimos artículos, consejos y novedades sobre el mundo del vino.</p>
+                        </div>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Tu correo electrónico" required>
+                            <button type="submit">Suscribirme</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- ========================================
+             BLOQUE 7: FOOTER
+             ======================================== -->
+         <footer>
+            <p>© 1950 IGNIS - BODEGA SELECTA</p>
+            <!-- ========================================
+                 PRIMERA ENTREGA - PUNTO G: MARQUEES
+                 Contenido desplazante implementado
+                 ======================================== -->
+            <marquee>🏷️ Descuento del 15% en compras mayores a S/200</marquee>
+         </footer>
+    </div>
+
+    <!-- ========================================
+         BLOQUE 8: SCRIPTS
+         ======================================== -->
+    <script src="js/gestorUsuarios.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/blog.js" defer></script>
+    <script src="js/login.js" defer></script>
+    
+
+</body>
+</html>

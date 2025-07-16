@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- ========================================
+         BLOQUE 1: CONFIGURACIÓN HEAD
+         ======================================== -->
+    <head>
+        <title>IGNIS - Premios y Reconocimientos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+    <!-- Información del usuario -->
+    <div id="userInfo" class="user-info">
+        <span id="userWelcome"></span>
+        <button class="logout-btn" onclick="cerrarSesion()" title="Cerrar Sesión">⏻</button>
+    </div>
+    
+    <!-- Menú móvil -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="nav-menu" id="navMenu">
+        <a href="inicio.html">Inicio</a>
+        <a href="vinos.html">Vinos</a>
+        <a href="bodega.html">Bodega</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="historia.html">Historia</a>
+        <a href="galeria.html">Galería</a>
+        <a href="faq.html">FAQ</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="blog.html">Blog</a>
+        <a href="premios.html" class="active">Premios</a>
+        <a href="elaboracion.html">Elaboración</a>
+    </nav>
+
+    <!-- Contenido principal protegido -->
+    <div id="mainContent" style="display: none;">
+        <!-- ========================================
+             BLOQUE 2: HEADER Y NAVEGACIÓN
+             ======================================== -->
+        <header class="header-index">
+            <!-- Logo centrado -->
+            <div class="logo-container-centered">
+                <a href="inicio.html" class="logo-link">
+                    <img src="img/logo.png" alt="Logo IGNIS" class="logo-centered">
+                    <h1 class="nombre-empresa">IGNIS</h1>
+                </a>
+            </div>
+        </header>
+
+        <!-- ========================================
+             BLOQUE 3: CONTENIDO PRINCIPAL
+             ======================================== -->
+        <main>
+            <div class="container">
+                <h1>Premios y Reconocimientos</h1>
+                <p class="intro-text">Descubre los galardones y reconocimientos internacionales que avalan la calidad de nuestros vinos.</p>
+                
+                <!-- ========================================
+                     BLOQUE 4: PREMIO DESTACADO
+                     ======================================== -->
+                <section class="premio-destacado">
+                    <div class="premio-destacado-contenido">
+                        <div class="premio-destacado-info">
+                            <h2>Gran Medalla de Oro</h2>
+                            <h3>Concurso Mundial de Bruselas 2024</h3>
+                            <p>Nuestro Reserva Malbec 2018 ha sido galardonado con la Gran Medalla de Oro en el prestigioso Concurso Mundial de Bruselas, uno de los certámenes más importantes del mundo vinícola.</p>
+                            <p>Este reconocimiento sitúa a IGNIS entre las bodegas más destacadas a nivel internacional, avalando nuestro compromiso con la excelencia y la calidad.</p>
+                            <a href="#" class="btn-ver-vino">Ver el vino premiado</a>
+                        </div>
+                        <div class="premio-destacado-imagen">
+                            <img src="img/vinoTinto2.png" alt="Vino premiado" class="img-fluid">
+                            <div class="premio-medalla">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- ========================================
+                     BLOQUE 5: PREMIOS POR AÑO
+                     ======================================== -->
+                <section class="premios-por-anio">
+                    <h2>🏅Nuestros Reconocimientos</h2>
+                    
+                    <div class="filtros-premios">
+                        <button class="filtro-premio activo">Todos</button>
+                        <button class="filtro-premio">2024</button>
+                        <button class="filtro-premio">2023</button>
+                        <button class="filtro-premio">2022</button>
+                        <button class="filtro-premio">Anteriores</button>
+                    </div>
+                    
+                    <!-- Premios 2024 -->
+                    <div class="premios-anio">
+                        <h3 class="anio-titulo">2024</h3>
+                        
+                        <div class="premios-lista">
+                            <div class="premio-item">
+                                <div class="premio-medalla-small oro">
+                                    
+                                </div>
+                                <div class="premio-info">
+                                    <h4>Gran Medalla de Oro - Concurso Mundial de Bruselas</h4>
+                                    <p>Reserva Malbec 2018</p>
+                                </div>
+                            </div>
+                            
+                            <div class="premio-item">
+                                <div class="premio-medalla-small plata">
+                                    
+                                </div>
+                                <div class="premio-info">
+                                    <h4>Medalla de Plata - International Wine Challenge</h4>
+                                    <p>Blanco Barrica 2021</p>
+                                </div>
+                            </div>
+                            
+                            <div class="premio-item">
+                                <div class="premio-medalla-small bronce">
+                                    
+                                </div>
+                                <div class="premio-info">
+                                    <h4>Medalla de Bronce - Decanter World Wine Awards</h4>
+                                    <p>Espumoso Brut Nature 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Premios 2023 -->
+                    <div class="premios-anio">
+                        <h3 class="anio-titulo">2023</h3>
+                        
+                        <div class="premios-lista">
+                            <div class="premio-item">
+                                <div class="premio-medalla-small oro">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <div class="premio-info">
+                                    <h4>Medalla de Oro - Mundus Vini</h4>
+                                    <p>Tinto Gran Reserva 2017</p>
+                                </div>
+                            </div>
+                            
+                            <div class="premio-item">
+                                <div class="premio-medalla-small plata">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <div class="premio-info">
+                                    <h4>Medalla de Plata - Concours Mondial de Bruxelles</h4>
+                                    <p>Rosado de Lacrima 2022</p>
+                                </div>
+                            </div>
+                            
+                            <div class="premio-item">
+                                <div class="premio-medalla-small especial">
+                                    
+                                </div>
+                                <div class="premio-info">
+                                    <h4>90 puntos - Robert Parker Wine Advocate</h4>
+                                    <p>Dulce Moscatel 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Premios 2022 -->
+                    <div class="premios-anio">
+                        <h3 class="anio-titulo">2022</h3>
+                        
+                        <div class="premios-lista">
+                            <div class="premio-item">
+                                <div class="premio-medalla-small oro">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <div class="premio-info">
+                                    <h4>Medalla de Oro - International Wine & Spirit Competition</h4>
+                                    <p>Tinto Reserva 2016</p>
+                                </div>
+                            </div>
+                            
+                            <div class="premio-item">
+                                <div class="premio-medalla-small especial">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="premio-info">
+                                    <h4>92 puntos - Wine Enthusiast</h4>
+                                    <p>Blanco Barrica 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- ========================================
+                     BLOQUE 6: RECONOCIMIENTOS ESPECIALES
+                     ======================================== -->
+                <section class="reconocimientos-especiales">
+                    <h2>Reconocimientos Especiales</h2>
+                    
+                    <div class="reconocimientos-grid">
+                        <div class="reconocimiento-card">
+                            <div class="reconocimiento-icono">
+                                
+                            </div>
+                            <div class="reconocimiento-info">
+                                <h3>Bodega del Año 2023</h3>
+                                <p>Otorgado por la Asociación Internacional de Enólogos</p>
+                            </div>
+                        </div>
+                        
+                        <div class="reconocimiento-card">
+                            <div class="reconocimiento-icono">
+                                
+                            </div>
+                            <div class="reconocimiento-info">
+                                <h3>Certificación Ecológica</h3>
+                                <p>Por nuestras prácticas sostenibles en viticultura</p>
+                            </div>
+                        </div>
+                        
+                        <div class="reconocimiento-card">
+                            <div class="reconocimiento-icono">
+                                
+                            </div>
+                            <div class="reconocimiento-info">
+                                <h3>Premio a la Innovación</h3>
+                                <p>Por nuestras técnicas de vinificación de precisión</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- ========================================
+             BLOQUE 7: FOOTER
+             ======================================== -->
+        <footer>
+            <p>&copy; 2023 IGNIS - Bodega Selecta. Todos los derechos reservados.</p>
+            <div class="marquee">
+                <span>🍷 Descubre nuestros vinos premiados | 🎯 Envío gratuito en pedidos superiores a 50€ | 🌟 Visitas guiadas todos los fines de semana | 🍇 Nuevas cosechas disponibles</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ========================================
+         BLOQUE 8: SCRIPTS
+         ======================================== -->
+    <script src="js/gestorUsuarios.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/premios.js" defer></script>
+    <script src="js/login.js" defer></script>
+    
+
+</body>
+</html>

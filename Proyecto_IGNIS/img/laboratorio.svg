@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="wallGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F8FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E6E6FA;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tableGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DCDCDC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C0C0C0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="liquidGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#DC143C;stop-opacity:0.8" />
+    </linearGradient>
+    <radialGradient id="lightGradient" cx="50%" cy="20%" r="80%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Fondo del laboratorio -->
+  <rect width="800" height="600" fill="url(#wallGradient)"/>
+  
+  <!-- Suelo -->
+  <rect x="0" y="500" width="800" height="100" fill="#F5F5F5"/>
+  
+  <!-- Patrón del suelo -->
+  <g stroke="#E0E0E0" stroke-width="1">
+    <line x1="0" y1="520" x2="800" y2="520"/>
+    <line x1="0" y1="540" x2="800" y2="540"/>
+    <line x1="0" y1="560" x2="800" y2="560"/>
+    <line x1="0" y1="580" x2="800" y2="580"/>
+  </g>
+  
+  <!-- Mesa de laboratorio -->
+  <rect x="100" y="400" width="600" height="100" fill="url(#tableGradient)" rx="5"/>
+  
+  <!-- Patas de la mesa -->
+  <g fill="#A9A9A9">
+    <rect x="120" y="500" width="8" height="50"/>
+    <rect x="680" y="500" width="8" height="50"/>
+    <rect x="300" y="500" width="8" height="50"/>
+    <rect x="500" y="500" width="8" height="50"/>
+  </g>
+  
+  <!-- Equipos de laboratorio -->
+  
+  <!-- Microscopio -->
+  <g transform="translate(200, 350)">
+    <!-- Base -->
+    <rect x="-15" y="30" width="30" height="20" fill="#2F4F4F" rx="3"/>
+    <!-- Brazo -->
+    <rect x="-3" y="10" width="6" height="30" fill="#2F4F4F"/>
+    <!-- Cabeza -->
+    <rect x="-10" y="0" width="20" height="15" fill="#2F4F4F" rx="2"/>
+    <!-- Ocular -->
+    <circle cx="0" cy="-5" r="4" fill="#000000"/>
+  </g>
+  
+  <!-- Tubos de ensayo -->
+  <g>
+    <!-- Tubo 1 -->
+    <g transform="translate(300, 380)">
+      <rect x="-3" y="0" width="6" height="20" fill="#E6E6FA" rx="3"/>
+      <rect x="-2" y="2" width="4" height="10" fill="url(#liquidGradient)"/>
+      <circle cx="0" cy="-2" r="2" fill="#8B4513"/>
+    </g>
+    
+    <!-- Tubo 2 -->
+    <g transform="translate(320, 380)">
+      <rect x="-3" y="0" width="6" height="20" fill="#E6E6FA" rx="3"/>
+      <rect x="-2" y="2" width="4" height="8" fill="#FFD700"/>
+      <circle cx="0" cy="-2" r="2" fill="#8B4513"/>
+    </g>
+    
+    <!-- Tubo 3 -->
+    <g transform="translate(340, 380)">
+      <rect x="-3" y="0" width="6" height="20" fill="#E6E6FA" rx="3"/>
+      <rect x="-2" y="2" width="4" height="12" fill="#9370DB"/>
+      <circle cx="0" cy="-2" r="2" fill="#8B4513"/>
+    </g>
+  </g>
+  
+  <!-- Soporte para tubos de ensayo -->
+  <rect x="285" y="395" width="70" height="8" fill="#8B4513" rx="2"/>
+  <g fill="#8B4513">
+    <circle cx="300" cy="403" r="4"/>
+    <circle cx="320" cy="403" r="4"/>
+    <circle cx="340" cy="403" r="4"/>
+  </g>
+  
+  <!-- Balanza -->
+  <g transform="translate(450, 370)">
+    <!-- Base -->
+    <rect x="-20" y="20" width="40" height="10" fill="#2F4F4F" rx="2"/>
+    <!-- Columna -->
+    <rect x="-2" y="0" width="4" height="25" fill="#2F4F4F"/>
+    <!-- Brazo -->
+    <rect x="-25" y="-2" width="50" height="4" fill="#2F4F4F"/>
+    <!-- Platos -->
+    <circle cx="-20" cy="5" r="8" fill="#C0C0C0"/>
+    <circle cx="20" cy="5" r="8" fill="#C0C0C0"/>
+    <!-- Cadenas -->
+    <g stroke="#696969" stroke-width="1">
+      <line x1="-20" y1="0" x2="-20" y2="-3"/>
+      <line x1="20" y1="0" x2="20" y2="-3"/>
+    </g>
+  </g>
+  
+  <!-- Matraces -->
+  <g>
+    <!-- Matraz 1 -->
+    <g transform="translate(550, 360)">
+      <!-- Cuerpo -->
+      <circle cx="0" cy="15" r="15" fill="#E6E6FA"/>
+      <!-- Cuello -->
+      <rect x="-2" y="0" width="4" height="15" fill="#E6E6FA"/>
+      <!-- Líquido -->
+      <circle cx="0" cy="18" r="10" fill="url(#liquidGradient)"/>
+      <!-- Tapón -->
+      <rect x="-3" y="-3" width="6" height="5" fill="#8B4513" rx="1"/>
+    </g>
+    
+    <!-- Matraz 2 -->
+    <g transform="translate(600, 365)">
+      <!-- Cuerpo -->
+      <circle cx="0" cy="12" r="12" fill="#E6E6FA"/>
+      <!-- Cuello -->
+      <rect x="-2" y="0" width="4" height="12" fill="#E6E6FA"/>
+      <!-- Líquido -->
+      <circle cx="0" cy="15" r="8" fill="#32CD32"/>
+      <!-- Tapón -->
+      <rect x="-3" y="-3" width="6" height="5" fill="#8B4513" rx="1"/>
+    </g>
+  </g>
+  
+  <!-- Computadora -->
+  <g transform="translate(650, 350)">
+    <!-- Monitor -->
+    <rect x="-25" y="0" width="50" height="30" fill="#2F2F2F" rx="2"/>
+    <rect x="-22" y="3" width="44" height="24" fill="#000080"/>
+    <!-- Base -->
+    <rect x="-15" y="30" width="30" height="5" fill="#696969" rx="2"/>
+    <!-- Teclado -->
+    <rect x="-20" y="38" width="40" height="8" fill="#F5F5F5" rx="1"/>
+  </g>
+  
+  <!-- Estantería con reactivos -->
+  <rect x="50" y="100" width="100" height="300" fill="#8B4513"/>
+  
+  <!-- Estantes -->
+  <g fill="#A0522D">
+    <rect x="50" y="130" width="100" height="5"/>
+    <rect x="50" y="180" width="100" height="5"/>
+    <rect x="50" y="230" width="100" height="5"/>
+    <rect x="50" y="280" width="100" height="5"/>
+    <rect x="50" y="330" width="100" height="5"/>
+  </g>
+  
+  <!-- Frascos en estantería -->
+  <g>
+    <!-- Fila 1 -->
+    <rect x="60" y="110" width="8" height="20" fill="#8B0000" rx="1"/>
+    <rect x="75" y="110" width="8" height="20" fill="#4169E1" rx="1"/>
+    <rect x="90" y="110" width="8" height="20" fill="#32CD32" rx="1"/>
+    <rect x="105" y="110" width="8" height="20" fill="#FFD700" rx="1"/>
+    <rect x="120" y="110" width="8" height="20" fill="#9370DB" rx="1"/>
+    
+    <!-- Fila 2 -->
+    <rect x="60" y="160" width="8" height="20" fill="#FF4500" rx="1"/>
+    <rect x="75" y="160" width="8" height="20" fill="#00CED1" rx="1"/>
+    <rect x="90" y="160" width="8" height="20" fill="#DC143C" rx="1"/>
+    <rect x="105" y="160" width="8" height="20" fill="#228B22" rx="1"/>
+    <rect x="120" y="160" width="8" height="20" fill="#FF1493" rx="1"/>
+  </g>
+  
+  <!-- Iluminación -->
+  <ellipse cx="400" cy="50" rx="300" ry="100" fill="url(#lightGradient)"/>
+  
+  <!-- Lámparas fluorescentes -->
+  <g fill="#F0F0F0">
+    <rect x="200" y="20" width="100" height="8" rx="4"/>
+    <rect x="500" y="20" width="100" height="8" rx="4"/>
+  </g>
+  
+  <!-- Gráfico en la pared -->
+  <g transform="translate(650, 150)">
+    <rect x="0" y="0" width="120" height="80" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+    <!-- Líneas del gráfico -->
+    <g stroke="#FF0000" stroke-width="2" fill="none">
+      <polyline points="10,60 30,45 50,30 70,40 90,25 110,35"/>
+    </g>
+    <g stroke="#0000FF" stroke-width="2" fill="none">
+      <polyline points="10,65 30,50 50,35 70,45 90,30 110,40"/>
+    </g>
+    <!-- Título -->
+    <text x="60" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#000000">Análisis pH</text>
+  </g>
+  
+  <!-- Texto -->
+  <text x="400" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#2F4F4F" font-weight="bold">Laboratorio Enológico</text>
+</svg>

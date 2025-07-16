@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- ========================================
+     BLOQUE 1: CONFIGURACIÓN HEAD
+     ======================================== -->
+<head>
+    <title>IGNIS - Proceso de Elaboración</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!-- ========================================
+     BLOQUE 2: HEADER Y NAVEGACIÓN
+     ======================================== -->
+<body>
+    <!-- Información del usuario -->
+    <div id="userInfo" class="user-info">
+        <span id="userWelcome"></span>
+        <button id="logout-btn" onclick="cerrarSesion()" title="Cerrar Sesión">⏻</button>
+    </div>
+
+    <!-- Botón de menú móvil -->
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Menú de navegación -->
+    <nav class="nav-menu" id="navMenu">
+        <a href="inicio.html">Inicio</a>
+        <a href="vinos.html">Vinos</a>
+        <a href="bodega.html">Bodega</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="historia.html">Historia</a>
+        <a href="galeria.html">Galería</a>
+        <a href="faq.html">FAQ</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="blog.html">Blog</a>
+        <a href="premios.html">Premios</a>
+        <a href="elaboracion.html" class="active">Elaboración</a>
+    </nav>
+
+    <!-- Contenido principal protegido -->
+    <div id="mainContent" style="display: none;">
+        <header class="header-index">
+            <!-- Logo centrado -->
+            <div class="logo-container-centered">
+                <a href="inicio.html" class="logo-link">
+                    <img src="img/logo.png" alt="Logo IGNIS" class="logo-centered">
+                    <h1 class="nombre-empresa">IGNIS</h1>
+                </a>
+            </div>
+        </header>
+
+        <!-- ========================================
+             BLOQUE 3: CONTENIDO PRINCIPAL
+             ======================================== -->
+        <main>
+        <div class="container">
+            <h1>Proceso de Elaboración</h1>
+            <p class="intro-text">Descubre el meticuloso proceso artesanal con el que elaboramos nuestros vinos, combinando tradición e innovación.</p>
+            
+            <!-- Introducción al proceso -->
+            <section class="elaboracion-intro">
+                <div class="elaboracion-intro-content">
+                    <div class="elaboracion-intro-texto">
+                        <h2>Nuestro Compromiso con la Excelencia</h2>
+                        <p>En IGNIS, cada botella es el resultado de un cuidadoso proceso que comienza en nuestros viñedos y culmina en nuestra bodega. Combinamos técnicas tradicionales heredadas de generaciones con las más modernas tecnologías para garantizar vinos de la más alta calidad.</p>
+                        <p>Nuestro equipo de enólogos supervisa cada etapa del proceso, asegurando que cada vino refleje fielmente las características únicas de nuestro terroir y las particularidades de cada añada.</p>
+                    </div>
+                    <div class="elaboracion-intro-imagen">
+                        <img src="img/vinoTinto.png" alt="Proceso de elaboración" class="img-fluid">
+                    </div>
+                </div>
+            </section>
+                
+            <!-- ========================================
+                 BLOQUE 4: PROCESO DE ELABORACIÓN
+                 ======================================== -->
+            <section class="proceso-timeline">
+                <h2>Etapas de Elaboración</h2>
+                
+                <div class="timeline">
+                    <!-- Etapa 1: Vendimia -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+
+                        </div>
+                        <div class="timeline-content">
+                            <h3>1. Vendimia</h3>
+                            <div class="timeline-info">
+                                <div class="timeline-texto">
+                                    <p>La vendimia es el punto de partida en la elaboración de nuestros vinos. Seleccionamos cuidadosamente cada racimo, realizando una recolección manual para garantizar que solo las uvas en su punto óptimo de maduración lleguen a nuestra bodega.</p>
+                                    <p>El momento exacto de la vendimia se determina tras un riguroso análisis de parámetros como el nivel de azúcar, acidez y madurez fenólica, asegurando así la máxima expresión de cada variedad.</p>
+                                    <ul class="proceso-detalles">
+                                        <li>Selección manual de racimos</li>
+                        <li>Control de maduración</li>
+                        <li>Recolección en cajas pequeñas</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-imagen">
+                                    <img src="img/vinoTinto2.png" alt="Vendimia" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Etapa 2: Despalillado y Estrujado -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+
+                        </div>
+                        <div class="timeline-content">
+                            <h3>2. Despalillado y Estrujado</h3>
+                            <div class="timeline-info">
+                                <div class="timeline-imagen">
+                                    <img src="img/vinoBlanco2.png" alt="Despalillado" class="img-fluid">
+                                </div>
+                                <div class="timeline-texto">
+                                    <p>Una vez en la bodega, las uvas pasan por el proceso de despalillado, donde se separan los granos del raspón. Este paso es fundamental para evitar sabores herbáceos y astringentes en el vino final.</p>
+                                    <p>Posteriormente, realizamos un suave estrujado que rompe la piel de la uva permitiendo la liberación del mosto, pero sin dañar las semillas, lo que podría aportar amargor indeseado.</p>
+                                    <ul class="proceso-detalles">
+                                        <li>Despalillado controlado</li>
+                                        <li>Estrujado suave</li>
+                                        <li>Selección óptica de granos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Etapa 3: Fermentación -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+
+                        </div>
+                        <div class="timeline-content">
+                            <h3>3. Fermentación</h3>
+                            <div class="timeline-info">
+                                <div class="timeline-texto">
+                                    <p>La fermentación es el proceso mágico donde el mosto se transforma en vino. En nuestras cubas de acero inoxidable con control de temperatura, las levaduras convierten los azúcares de la uva en alcohol.</p>
+                                    <p>Para nuestros vinos tintos, realizamos la maceración junto con la fermentación, permitiendo que el mosto esté en contacto con los hollejos para extraer color, taninos y aromas. En los vinos blancos, fermentamos solo el mosto, previamente separado de las pieles.</p>
+                                    <ul class="proceso-detalles">
+                                        <li>Control de temperatura</li>
+                                        <li>Levaduras seleccionadas</li>
+                                        <li>Remontados diarios (tintos)</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-imagen">
+                                    <img src="img/vinoRosado.png" alt="Fermentación" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     
+                     <!-- Etapa 4: Crianza -->
+                     <div class="timeline-item">
+                         <div class="timeline-dot">
+
+                         </div>
+                         <div class="timeline-content">
+                             <h3>4. Crianza</h3>
+                             <div class="timeline-info">
+                                 <div class="timeline-imagen">
+                                     <img src="img/vinoEspumoso.png" alt="Crianza" class="img-fluid">
+                                 </div>
+                                 <div class="timeline-texto">
+                                     <p>Tras la fermentación, nuestros vinos más selectos pasan a la fase de crianza en barricas de roble francés y americano. Durante este periodo, el vino evoluciona, ganando complejidad, estructura y nuevos matices aromáticos.</p>
+                                     <p>El tiempo de crianza varía según el tipo de vino, desde los 6 meses para nuestros vinos jóvenes hasta los 24 meses para nuestras grandes reservas. Durante este proceso, realizamos trasiegos periódicos para clarificar naturalmente el vino.</p>
+                                     <ul class="proceso-detalles">
+                                         <li>Barricas de roble seleccionado</li>
+                                         <li>Control de humedad y temperatura</li>
+                                         <li>Trasiegos periódicos</li>
+                                     </ul>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     
+                     <!-- Etapa 5: Embotellado -->
+                     <div class="timeline-item">
+                         <div class="timeline-dot">
+    
+                         </div>
+                         <div class="timeline-content">
+                             <h3>5. Embotellado y Afinamiento</h3>
+                             <div class="timeline-info">
+                                 <div class="timeline-texto">
+                                     <p>El embotellado es la culminación del proceso de elaboración. Utilizamos una línea de embotellado de última generación que garantiza la máxima higiene y preservación de las cualidades del vino.</p>
+                                     <p>Tras el embotellado, nuestros vinos reposan en nuestra bodega subterránea para su afinamiento en botella. Este periodo final permite que todos los componentes del vino se integren perfectamente, alcanzando su máxima expresión antes de llegar al consumidor.</p>
+                                     <ul class="proceso-detalles">
+                                         <li>Embotellado en atmósfera inerte</li>
+                                         <li>Corchos de máxima calidad</li>
+                                         <li>Afinamiento en botella controlado</li>
+                                     </ul>
+                                 </div>
+                                 <div class="timeline-imagen">
+                                     <img src="img/vinoDulce.png" alt="Embotellado" class="img-fluid">
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </section>
+            
+            <!-- ========================================
+                 BLOQUE 5: GALERÍA INTERACTIVA
+                 ======================================== -->
+            <section class="galeria-elaboracion">
+                <h2>Explora Nuestro Proceso</h2>
+                <div class="galeria-bodega">
+                    <div class="botones-galeria">
+                        <button class="btn-galeria active" data-imagen="vendimia">Vendimia</button>
+                        <button class="btn-galeria" data-imagen="despalillado">Despalillado</button>
+                        <button class="btn-galeria" data-imagen="fermentacion">Fermentación</button>
+                        <button class="btn-galeria" data-imagen="crianza">Crianza</button>
+                        <button class="btn-galeria" data-imagen="embotellado">Embotellado</button>
+                        <button class="btn-galeria" data-imagen="laboratorio">Laboratorio</button>
+                    </div>
+                    <div class="marco-imagen">
+                        <img id="imagen-bodega" src="img/vinoTinto.png" alt="Proceso de Elaboración" />
+                        <div class="descripcion-imagen">
+                            <h4 id="titulo-imagen">Vendimia</h4>
+                            <p id="texto-imagen">Selección manual de racimos en el punto óptimo de maduración para garantizar la máxima calidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+        </div>
+        </main>
+
+        <!-- ========================================
+             BLOQUE 6: FOOTER
+             ======================================== -->
+        <footer>
+            <p>&copy; 2023 IGNIS - Bodega Selecta. Todos los derechos reservados.</p>
+            <div class="marquee">
+                <span>🍷 Descubre nuestros vinos premiados | 🎯 Envío gratuito en pedidos superiores a 50€ | 🌟 Visitas guiadas todos los fines de semana | 🍇 Nuevas cosechas disponibles</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ========================================
+         BLOQUE 7: SCRIPTS
+         ======================================== -->
+    <script src="js/gestorUsuarios.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/elaboracion.js" defer></script>
+    <script src="js/login.js" defer></script>
+</body>
+</html>

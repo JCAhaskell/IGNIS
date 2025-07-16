@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- ========================================
+     BLOQUE 1: CONFIGURACIÓN HEAD
+     ======================================== -->
+<head>
+    <title>IGNIS - Bodega</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!-- ========================================
+     BLOQUE 2: HEADER Y NAVEGACIÓN
+     ======================================== -->
+<body>
+    <!-- Información del usuario -->
+    <div id="userInfo" class="user-info">
+        <span id="userWelcome"></span>
+        <button class="logout-btn" onclick="cerrarSesion()" title="Cerrar Sesión">⏻</button>
+    </div>
+    
+    <!-- Menú móvil -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="nav-menu" id="navMenu">
+        <a href="inicio.html">Inicio</a>
+        <a href="vinos.html">Vinos</a>
+        <a href="bodega.html" class="active">Bodega</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="historia.html">Historia</a>
+        <a href="galeria.html">Galería</a>
+        <a href="faq.html">FAQ</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="blog.html">Blog</a>
+        <a href="premios.html">Premios</a>
+        <a href="elaboracion.html">Elaboración</a>
+    </nav>
+
+    <!-- Contenido principal protegido -->
+    <div id="mainContent" style="display: none;">
+        <header class="header-index">
+            <!-- Logo centrado -->
+            <div class="logo-container-centered">
+                <a href="inicio.html" class="logo-link">
+                    <img src="img/logo.png" alt="Logo IGNIS" class="logo-centered">
+                    <h1 class="nombre-empresa">IGNIS</h1>
+                </a>
+            </div>
+        </header>
+
+        <!-- ========================================
+             BLOQUE 3: CONTENIDO PRINCIPAL
+             ======================================== -->
+        <main class="container">
+        <!-- Información de la bodega -->
+        <h2>Nuestra Bodega</h2>
+        <p>Fundada por Don Ignacio Perez, nuestra bodega mantiene metodos artesanales</p>
+        <p>Ubica en el corazon de los viñedos Aequipeños, combinamos tradicion y tecnologia.</p>
+        
+        <!-- Galería interactiva -->
+        <div class="galeria-bodega">
+            <h3>Explora Nuestra Bodega</h3>
+            <div class="botones-galeria">
+                <button class="btn-galeria active" data-imagen="exterior">Exterior</button>
+                <button class="btn-galeria" data-imagen="barricas">Barricas</button>
+                <button class="btn-galeria" data-imagen="fermentacion">Fermentación</button>
+                <button class="btn-galeria" data-imagen="laboratorio">Laboratorio</button>
+                <button class="btn-galeria" data-imagen="cata">Sala de Cata</button>
+                <button class="btn-galeria" data-imagen="vinedos">Viñedos</button>
+            </div>
+            <div class="marco-imagen">
+                <img id="imagen-bodega" src="img/logo.png" alt="Bodega IGNIS" />
+                <div class="descripcion-imagen">
+                    <h4 id="titulo-imagen">Exterior de la Bodega</h4>
+                    <p id="texto-imagen">Vista exterior de nuestra bodega ubicada en el corazón de los viñedos arequipeños.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Servicios de la Bodega -->
+        <section class="servicios-bodega">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card" data-servicio="visitas-guiadas">
+                    <div class="servicio-info">
+                        <h3>Visitas Guiadas</h3>
+                        <div class="servicio-meta">
+                            <span class="servicio-tipo">Presencial</span>
+                            <span class="servicio-precio">S/ 45</span>
+                        </div>
+                        <p class="servicio-descripcion">Recorre nuestras instalaciones con un guía experto y descubre los secretos de la elaboración del vino.</p>
+                        <div class="servicio-detalles">
+                            <span>90 minutos</span>
+                            <span>Máx. 12 personas</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="servicio-card" data-servicio="catas-eventos">
+                    <div class="servicio-info">
+                        <h3>Catas y Eventos</h3>
+                        <div class="servicio-meta">
+                            <span class="servicio-tipo">Experiencia</span>
+                            <span class="servicio-precio">S/ 85</span>
+                        </div>
+                        <p class="servicio-descripcion">Participa en nuestras catas temáticas y eventos especiales con maridajes únicos.</p>
+                        <div class="servicio-detalles">
+                            <span>2 horas</span>
+                            <span>Incluye maridaje</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Ubicación y mapa -->
+        <div style="text-align: center;">
+            <h3>Ubicación</h3>
+            <p>Calle manzanitos sin numero</p>
+        </div>
+        <iframe width="100%" height="400px" 
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-71.54034554958345%2C-16.4149912571567%2C-71.53846800327302%2C-16.412662784684976&amp;layer=mapnik" 
+                class="iframe-border">
+        </iframe>
+        <br/><small><a href="https://www.openstreetmap.org/?#map=19/-16.413827/-71.539407">Ver el mapa más grande</a></small>
+        </main>
+
+        <!-- ========================================
+             BLOQUE 4: FOOTER
+             ======================================== -->
+        <footer>
+            <p>&copy; 2023 IGNIS - Bodega Selecta. Todos los derechos reservados.</p>
+            <div class="marquee">
+                <span>🍷 Descubre nuestros vinos premiados | 🎯 Envío gratuito en pedidos superiores a 50€ | 🌟 Visitas guiadas todos los fines de semana | 🍇 Nuevas cosechas disponibles</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ========================================
+         BLOQUE 5: SCRIPTS
+         ======================================== -->
+    <script src="js/main.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/gestorUsuarios.js" defer></script>
+    <script src="js/bodega.js" defer></script>
+    <script src="js/login.js" defer></script>
+    
+
+    </body>
+</html>

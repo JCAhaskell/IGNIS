@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- ========================================
+     BLOQUE 1: CONFIGURACIÓN HEAD
+     ======================================== -->
+<head>
+    <title>IGNIS - Historia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!-- ========================================
+     BLOQUE 2: HEADER Y NAVEGACIÓN
+     ======================================== -->
+<body>
+    <!-- Información del usuario -->
+    <div id="userInfo" class="user-info">
+        <span id="userWelcome"></span>
+        <button class="logout-btn" onclick="cerrarSesion()" title="Cerrar Sesión">⏻</button>
+    </div>
+    
+    <!-- Menú móvil -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="nav-menu" id="navMenu">
+        <a href="inicio.html">Inicio</a>
+        <a href="vinos.html">Vinos</a>
+        <a href="bodega.html">Bodega</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="historia.html" class="active">Historia</a>
+        <a href="galeria.html">Galería</a>
+        <a href="faq.html">FAQ</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="blog.html">Blog</a>
+        <a href="premios.html">Premios</a>
+        <a href="elaboracion.html">Elaboración</a>
+    </nav>
+
+    <!-- Contenido principal protegido -->
+    <div id="mainContent" style="display: none;">
+        <header class="header-index">
+            <!-- Logo centrado -->
+            <div class="logo-container-centered">
+                <a href="inicio.html" class="logo-link">
+                    <img src="img/logo.png" alt="Logo IGNIS" class="logo-centered">
+                    <h1 class="nombre-empresa">IGNIS</h1>
+                </a>
+            </div>
+        </header>
+
+        <!-- ========================================
+             BLOQUE 3: CONTENIDO PRINCIPAL
+             ======================================== -->
+        <main class="container">
+        <section>
+            <h1>Nuestra Historia</h1>
+            
+            <!-- Timeline histórica -->
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Los inicios</h3>
+                        <p>Don Ignacio Pérez funda IGNIS con una pequeña parcela de 5 hectáreas en las afueras de Arequipa, comenzando con la producción de vinos tintos tradicionales.</p>
+                    </div>
+                    <div class="timeline-date">1950</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Expansión</h3>
+                        <p>La bodega expande sus terrenos a 15 hectáreas e introduce nuevas variedades de uva importadas de Europa, mejorando significativamente la calidad de sus vinos.</p>
+                    </div>
+                    <div class="timeline-date">1970</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Modernización</h3>
+                        <p>IGNIS incorpora tecnología de vanguardia en sus procesos de producción, manteniendo al mismo tiempo las técnicas tradicionales que dan carácter a sus vinos.</p>
+                    </div>
+                    <div class="timeline-date">1990</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Reconocimiento internacional</h3>
+                        <p>Los vinos de IGNIS comienzan a ser exportados y reciben reconocimientos en concursos internacionales, posicionando a la bodega como un referente de calidad.</p>
+                    </div>
+                    <div class="timeline-date">2005</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Actualidad</h3>
+                        <p>Hoy, IGNIS continúa su legado de excelencia bajo la dirección de la tercera generación de la familia Pérez, combinando tradición e innovación en cada botella.</p>
+                    </div>
+                    <div class="timeline-date">2023</div>
+                </div>
+            </div>
+        </section>
+        </main>
+
+        <!-- ========================================
+             BLOQUE 4: FOOTER
+             ======================================== -->
+        <footer>
+            <p>&copy; 2023 IGNIS - Bodega Selecta. Todos los derechos reservados.</p>
+            <div class="marquee">
+                <span>🍷 Descubre nuestros vinos premiados | 🎯 Envío gratuito en pedidos superiores a 50€ | 🌟 Visitas guiadas todos los fines de semana | 🍇 Nuevas cosechas disponibles</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ========================================
+         BLOQUE 5: SCRIPTS
+         ======================================== -->
+    <script src="js/main.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/gestorUsuarios.js" defer></script>
+    <script src="js/historia.js" defer></script>
+    <script src="js/login.js" defer></script>
+    
+
+</body>
+</html>

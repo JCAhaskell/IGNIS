@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#191970;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B0082;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tableGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#654321;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="candleGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:0.3" />
+    </radialGradient>
+    <radialGradient id="lightGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFFACD;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#FFFACD;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Cielo nocturno -->
+  <rect width="800" height="400" fill="url(#skyGradient)"/>
+  
+  <!-- Estrellas -->
+  <g fill="#FFFFFF">
+    <circle cx="100" cy="50" r="1"/>
+    <circle cx="200" cy="80" r="1.5"/>
+    <circle cx="350" cy="60" r="1"/>
+    <circle cx="500" cy="40" r="1.5"/>
+    <circle cx="650" cy="70" r="1"/>
+    <circle cx="750" cy="90" r="1.5"/>
+    <circle cx="150" cy="120" r="1"/>
+    <circle cx="450" cy="100" r="1"/>
+    <circle cx="600" cy="110" r="1.5"/>
+  </g>
+  
+  <!-- Luna -->
+  <circle cx="700" cy="100" r="25" fill="#F5F5DC" opacity="0.9"/>
+  
+  <!-- Terraza de la bodega -->
+  <rect x="0" y="400" width="800" height="200" fill="#8B7355"/>
+  
+  <!-- Patrón del suelo -->
+  <g stroke="#654321" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="420" x2="800" y2="420"/>
+    <line x1="0" y1="440" x2="800" y2="440"/>
+    <line x1="0" y1="460" x2="800" y2="460"/>
+    <line x1="0" y1="480" x2="800" y2="480"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+    <line x1="0" y1="520" x2="800" y2="520"/>
+    <line x1="0" y1="540" x2="800" y2="540"/>
+    <line x1="0" y1="560" x2="800" y2="560"/>
+  </g>
+  
+  <!-- Mesa principal -->
+  <ellipse cx="400" cy="480" rx="150" ry="60" fill="url(#tableGradient)"/>
+  
+  <!-- Sombra de la mesa -->
+  <ellipse cx="405" cy="485" rx="150" ry="60" fill="#000000" opacity="0.2"/>
+  
+  <!-- Mantel elegante -->
+  <ellipse cx="400" cy="475" rx="140" ry="55" fill="#FFFFFF" opacity="0.9"/>
+  
+  <!-- Copas de vino en la mesa -->
+  <g>
+    <!-- Copa 1 -->
+    <g transform="translate(320, 450)">
+      <ellipse cx="0" cy="20" rx="12" ry="4" fill="#E6E6FA"/>
+      <rect x="-12" y="0" width="24" height="20" fill="#E6E6FA" opacity="0.8"/>
+      <rect x="-1" y="20" width="2" height="12" fill="#E6E6FA"/>
+      <ellipse cx="0" cy="32" rx="6" ry="2" fill="#E6E6FA"/>
+      <!-- Vino tinto -->
+      <ellipse cx="0" cy="15" rx="10" ry="3" fill="#722F37"/>
+    </g>
+    
+    <!-- Copa 2 -->
+    <g transform="translate(400, 445)">
+      <ellipse cx="0" cy="20" rx="12" ry="4" fill="#E6E6FA"/>
+      <rect x="-12" y="0" width="24" height="20" fill="#E6E6FA" opacity="0.8"/>
+      <rect x="-1" y="20" width="2" height="12" fill="#E6E6FA"/>
+      <ellipse cx="0" cy="32" rx="6" ry="2" fill="#E6E6FA"/>
+      <!-- Vino blanco -->
+      <ellipse cx="0" cy="15" rx="10" ry="3" fill="#F5DEB3"/>
+    </g>
+    
+    <!-- Copa 3 -->
+    <g transform="translate(480, 450)">
+      <ellipse cx="0" cy="20" rx="12" ry="4" fill="#E6E6FA"/>
+      <rect x="-12" y="0" width="24" height="20" fill="#E6E6FA" opacity="0.8"/>
+      <rect x="-1" y="20" width="2" height="12" fill="#E6E6FA"/>
+      <ellipse cx="0" cy="32" rx="6" ry="2" fill="#E6E6FA"/>
+      <!-- Champagne -->
+      <ellipse cx="0" cy="15" rx="10" ry="3" fill="#FFFACD"/>
+    </g>
+  </g>
+  
+  <!-- Velas en la mesa -->
+  <g>
+    <!-- Vela 1 -->
+    <g transform="translate(350, 460)">
+      <rect x="-2" y="0" width="4" height="15" fill="#FFFACD"/>
+      <ellipse cx="0" cy="-2" rx="3" ry="1" fill="url(#candleGradient)"/>
+      <!-- Llama -->
+      <ellipse cx="0" cy="-5" rx="2" ry="4" fill="#FF4500"/>
+      <ellipse cx="0" cy="-6" rx="1" ry="2" fill="#FFD700"/>
+    </g>
+    
+    <!-- Vela 2 -->
+    <g transform="translate(450, 460)">
+      <rect x="-2" y="0" width="4" height="15" fill="#FFFACD"/>
+      <ellipse cx="0" cy="-2" rx="3" ry="1" fill="url(#candleGradient)"/>
+      <!-- Llama -->
+      <ellipse cx="0" cy="-5" rx="2" ry="4" fill="#FF4500"/>
+      <ellipse cx="0" cy="-6" rx="1" ry="2" fill="#FFD700"/>
+    </g>
+  </g>
+  
+  <!-- Candelabro central -->
+  <g transform="translate(400, 440)">
+    <!-- Base -->
+    <ellipse cx="0" cy="25" rx="15" ry="5" fill="#FFD700"/>
+    <!-- Tallo -->
+    <rect x="-2" y="10" width="4" height="15" fill="#FFD700"/>
+    <!-- Brazos -->
+    <rect x="-20" y="8" width="40" height="3" fill="#FFD700"/>
+    <!-- Velas en los brazos -->
+    <g>
+      <!-- Vela izquierda -->
+      <rect x="-18" y="0" width="3" height="10" fill="#FFFACD"/>
+      <ellipse cx="-16.5" cy="-2" rx="2" ry="1" fill="url(#candleGradient)"/>
+      <ellipse cx="-16.5" cy="-4" rx="1.5" ry="3" fill="#FF4500"/>
+      
+      <!-- Vela derecha -->
+      <rect x="15" y="0" width="3" height="10" fill="#FFFACD"/>
+      <ellipse cx="16.5" cy="-2" rx="2" ry="1" fill="url(#candleGradient)"/>
+      <ellipse cx="16.5" cy="-4" rx="1.5" ry="3" fill="#FF4500"/>
+      
+      <!-- Vela central -->
+      <rect x="-1.5" y="-5" width="3" height="10" fill="#FFFACD"/>
+      <ellipse cx="0" cy="-7" rx="2" ry="1" fill="url(#candleGradient)"/>
+      <ellipse cx="0" cy="-9" rx="1.5" ry="3" fill="#FF4500"/>
+    </g>
+  </g>
+  
+  <!-- Personas en el evento -->
+  <g>
+    <!-- Persona 1 -->
+    <g transform="translate(200, 500)">
+      <!-- Cuerpo -->
+      <rect x="-8" y="0" width="16" height="35" fill="#000080" rx="3"/>
+      <!-- Cabeza -->
+      <circle cx="0" cy="-8" r="6" fill="#FDBCB4"/>
+      <!-- Brazos -->
+      <rect x="-18" y="5" width="10" height="3" fill="#FDBCB4" rx="1"/>
+      <rect x="8" y="5" width="10" height="3" fill="#FDBCB4" rx="1"/>
+      <!-- Piernas -->
+      <rect x="-5" y="35" width="4" height="15" fill="#2F2F2F"/>
+      <rect x="1" y="35" width="4" height="15" fill="#2F2F2F"/>
+      <!-- Copa en la mano -->
+      <g transform="translate(20, 6)">
+        <rect x="-3" y="0" width="6" height="8" fill="#E6E6FA" opacity="0.8"/>
+        <rect x="-0.5" y="8" width="1" height="4" fill="#E6E6FA"/>
+        <ellipse cx="0" cy="6" rx="2" ry="1" fill="#722F37"/>
+      </g>
+    </g>
+    
+    <!-- Persona 2 -->
+    <g transform="translate(600, 505)">
+      <!-- Cuerpo -->
+      <rect x="-8" y="0" width="16" height="35" fill="#8B0000" rx="3"/>
+      <!-- Cabeza -->
+      <circle cx="0" cy="-8" r="6" fill="#FDBCB4"/>
+      <!-- Brazos -->
+      <rect x="-18" y="5" width="10" height="3" fill="#FDBCB4" rx="1"/>
+      <rect x="8" y="5" width="10" height="3" fill="#FDBCB4" rx="1"/>
+      <!-- Piernas -->
+      <rect x="-5" y="35" width="4" height="15" fill="#2F2F2F"/>
+      <rect x="1" y="35" width="4" height="15" fill="#2F2F2F"/>
+    </g>
+  </g>
+  
+  <!-- Luces ambientales -->
+  <g>
+    <ellipse cx="350" cy="430" rx="80" ry="40" fill="url(#lightGradient)"/>
+    <ellipse cx="450" cy="430" rx="80" ry="40" fill="url(#lightGradient)"/>
+  </g>
+  
+  <!-- Decoraciones colgantes -->
+  <g stroke="#FFD700" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M 100 350 Q 150 370 200 350 Q 250 330 300 350"/>
+    <path d="M 500 350 Q 550 370 600 350 Q 650 330 700 350"/>
+  </g>
+  
+  <!-- Pequeñas luces decorativas -->
+  <g fill="#FFD700" opacity="0.8">
+    <circle cx="120" cy="360" r="2"/>
+    <circle cx="180" cy="365" r="2"/>
+    <circle cx="240" cy="355" r="2"/>
+    <circle cx="520" cy="360" r="2"/>
+    <circle cx="580" cy="365" r="2"/>
+    <circle cx="640" cy="355" r="2"/>
+  </g>
+  
+  <!-- Texto -->
+  <text x="400" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#D2B48C" font-weight="bold">Eventos Especiales</text>
+</svg>

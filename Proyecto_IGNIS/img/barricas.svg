@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="woodGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#A0522D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B4513;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="metalGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C0C0C0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#E5E5E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C0C0C0;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="shadowGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Fondo de bodega -->
+  <rect width="800" height="600" fill="#2F2F2F"/>
+  
+  <!-- Suelo de piedra -->
+  <rect x="0" y="500" width="800" height="100" fill="#696969"/>
+  
+  <!-- Barrica 1 (primer plano) -->
+  <g transform="translate(150, 300)">
+    <!-- Sombra -->
+    <ellipse cx="0" cy="150" rx="80" ry="20" fill="url(#shadowGradient)"/>
+    
+    <!-- Cuerpo de la barrica -->
+    <ellipse cx="0" cy="0" rx="60" ry="15" fill="url(#woodGradient)"/>
+    <rect x="-60" y="0" width="120" height="120" fill="url(#woodGradient)"/>
+    <ellipse cx="0" cy="120" rx="60" ry="15" fill="#654321"/>
+    
+    <!-- Aros metálicos -->
+    <rect x="-65" y="10" width="130" height="8" fill="url(#metalGradient)" rx="4"/>
+    <rect x="-65" y="40" width="130" height="8" fill="url(#metalGradient)" rx="4"/>
+    <rect x="-65" y="70" width="130" height="8" fill="url(#metalGradient)" rx="4"/>
+    <rect x="-65" y="100" width="130" height="8" fill="url(#metalGradient)" rx="4"/>
+    
+    <!-- Vetas de madera -->
+    <g stroke="#654321" stroke-width="2" opacity="0.6">
+      <line x1="-50" y1="5" x2="-50" y2="115"/>
+      <line x1="-25" y1="5" x2="-25" y2="115"/>
+      <line x1="0" y1="5" x2="0" y2="115"/>
+      <line x1="25" y1="5" x2="25" y2="115"/>
+      <line x1="50" y1="5" x2="50" y2="115"/>
+    </g>
+    
+    <!-- Tapón -->
+    <circle cx="0" cy="-5" r="8" fill="#8B4513"/>
+  </g>
+  
+  <!-- Barrica 2 (segundo plano) -->
+  <g transform="translate(350, 320)">
+    <!-- Sombra -->
+    <ellipse cx="0" cy="130" rx="70" ry="18" fill="url(#shadowGradient)"/>
+    
+    <!-- Cuerpo de la barrica -->
+    <ellipse cx="0" cy="0" rx="55" ry="12" fill="url(#woodGradient)"/>
+    <rect x="-55" y="0" width="110" height="110" fill="url(#woodGradient)"/>
+    <ellipse cx="0" cy="110" rx="55" ry="12" fill="#654321"/>
+    
+    <!-- Aros metálicos -->
+    <rect x="-60" y="8" width="120" height="6" fill="url(#metalGradient)" rx="3"/>
+    <rect x="-60" y="35" width="120" height="6" fill="url(#metalGradient)" rx="3"/>
+    <rect x="-60" y="62" width="120" height="6" fill="url(#metalGradient)" rx="3"/>
+    <rect x="-60" y="89" width="120" height="6" fill="url(#metalGradient)" rx="3"/>
+    
+    <!-- Vetas de madera -->
+    <g stroke="#654321" stroke-width="1.5" opacity="0.6">
+      <line x1="-45" y1="3" x2="-45" y2="107"/>
+      <line x1="-22" y1="3" x2="-22" y2="107"/>
+      <line x1="0" y1="3" x2="0" y2="107"/>
+      <line x1="22" y1="3" x2="22" y2="107"/>
+      <line x1="45" y1="3" x2="45" y2="107"/>
+    </g>
+    
+    <!-- Tapón -->
+    <circle cx="0" cy="-3" r="6" fill="#8B4513"/>
+  </g>
+  
+  <!-- Barrica 3 (tercer plano) -->
+  <g transform="translate(550, 340)">
+    <!-- Sombra -->
+    <ellipse cx="0" cy="110" rx="60" ry="15" fill="url(#shadowGradient)"/>
+    
+    <!-- Cuerpo de la barrica -->
+    <ellipse cx="0" cy="0" rx="45" ry="10" fill="url(#woodGradient)"/>
+    <rect x="-45" y="0" width="90" height="90" fill="url(#woodGradient)"/>
+    <ellipse cx="0" cy="90" rx="45" ry="10" fill="#654321"/>
+    
+    <!-- Aros metálicos -->
+    <rect x="-50" y="6" width="100" height="5" fill="url(#metalGradient)" rx="2"/>
+    <rect x="-50" y="28" width="100" height="5" fill="url(#metalGradient)" rx="2"/>
+    <rect x="-50" y="50" width="100" height="5" fill="url(#metalGradient)" rx="2"/>
+    <rect x="-50" y="72" width="100" height="5" fill="url(#metalGradient)" rx="2"/>
+    
+    <!-- Vetas de madera -->
+    <g stroke="#654321" stroke-width="1" opacity="0.6">
+      <line x1="-35" y1="2" x2="-35" y2="88"/>
+      <line x1="-18" y1="2" x2="-18" y2="88"/>
+      <line x1="0" y1="2" x2="0" y2="88"/>
+      <line x1="18" y1="2" x2="18" y2="88"/>
+      <line x1="35" y1="2" x2="35" y2="88"/>
+    </g>
+    
+    <!-- Tapón -->
+    <circle cx="0" cy="-2" r="5" fill="#8B4513"/>
+  </g>
+  
+  <!-- Iluminación ambiental -->
+  <rect x="0" y="0" width="200" height="600" fill="url(#shadowGradient)" opacity="0.3"/>
+  
+  <!-- Texto -->
+  <text x="400" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#D2B48C" font-weight="bold">Barricas de Roble</text>
+</svg>

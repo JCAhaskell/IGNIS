@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- ========================================
+     BLOQUE 1: CONFIGURACIÓN HEAD
+     ======================================== -->
+<head>
+    <title>IGNIS - Vinos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!-- ========================================
+     BLOQUE 2: HEADER Y NAVEGACIÓN
+     ======================================== -->
+<body>
+    <!-- Información del usuario -->
+    <div id="userInfo" class="user-info">
+        <span id="userWelcome"></span>
+        <button class="logout-btn" onclick="cerrarSesion()" title="Cerrar Sesión">⏻</button>
+    </div>
+    
+    <!-- Menú móvil -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="nav-menu" id="navMenu">
+        <a href="inicio.html">Inicio</a>
+        <a href="vinos.html" class="active">Vinos</a>
+        <a href="bodega.html">Bodega</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="historia.html">Historia</a>
+        <a href="galeria.html">Galería</a>
+        <a href="faq.html">FAQ</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="blog.html">Blog</a>
+        <a href="premios.html">Premios</a>
+        <a href="elaboracion.html">Elaboración</a>
+    </nav>
+    
+    <!-- Estado de carga -->
+    <div id="loadingMessage" class="loading">
+        Verificando autenticación...
+    </div>
+    
+    <div id="mainContent" class="protected-content">
+        <!-- Logo centrado -->
+        <header class="header-index">
+            <div class="logo-container-centered">
+                <img src="img/logo.png" alt="Logo IGNIS" class="logo-centered">
+                <h1 class="nombre-empresa">IGNIS</h1>
+            </div>
+        </header>
+    <!-- ========================================
+         BLOQUE 3: CONTENIDO PRINCIPAL
+         ======================================== -->
+    <main class="container">
+        <h2>Nuestra Colección de Vinos</h2>
+        <div class="vinos-grid">
+            <div class="vino-card" data-vino="tinto-reserva">
+                <div class="vino-imagen-container">
+                    <img src="img/vinoTinto.png" alt="Tinto Reserva" class="vino-imagen">
+                </div>
+                <div class="vino-info">
+                    <h3>Tinto Reserva</h3>
+                    <p class="vino-tipo">Cabernet y Malbec</p>
+                    <p class="vino-precio">S/ 120</p>
+                    <p class="vino-descripcion">Cosecha 2020. Envejecido 12 meses en barricas de roble francés.</p>
+                </div>
+            </div>
+            
+            <div class="vino-card" data-vino="blanco-barrica">
+                <div class="vino-imagen-container">
+                    <img src="img/vinoBlanco.png" alt="Blanco Barrica" class="vino-imagen">
+                </div>
+                <div class="vino-info">
+                    <h3>Blanco Barrica</h3>
+                    <p class="vino-tipo">Chardonnay y Sauvignon Blanc</p>
+                    <p class="vino-precio">S/ 95</p>
+                    <p class="vino-descripcion">Cosecha 2021. Fermentado en barricas de roble americano.</p>
+                </div>
+            </div>
+            
+            <div class="vino-card" data-vino="rosado-lacrima">
+                <div class="vino-imagen-container">
+                    <img src="img/vinoRosado.png" alt="Rosado de Lacrima" class="vino-imagen">
+                </div>
+                <div class="vino-info">
+                    <h3>Rosado de Lacrima</h3>
+                    <p class="vino-tipo">Lacrima di Morro</p>
+                    <p class="vino-precio">S/ 85</p>
+                    <p class="vino-descripcion">Cosecha 2022. Color salmón brillante con aromas florales.</p>
+                </div>
+            </div>
+            
+            <div class="vino-card" data-vino="espumoso-brut">
+                <div class="vino-imagen-container">
+                    <img src="img/vinoEspumoso.png" alt="Espumoso Brut Nature" class="vino-imagen">
+                </div>
+                <div class="vino-info">
+                    <h3>Espumoso Brut Nature</h3>
+                    <p class="vino-tipo">Pinot Noir y Chardonnay</p>
+                    <p class="vino-precio">S/ 150</p>
+                    <p class="vino-descripcion">Cosecha 2021. Método tradicional sin azúcar agregada.</p>
+                </div>
+            </div>
+            
+            <div class="vino-card" data-vino="dulce-moscatel">
+                <div class="vino-imagen-container">
+                    <img src="img/vinoDulce.png" alt="Dulce Moscatel" class="vino-imagen">
+                </div>
+                <div class="vino-info">
+                    <h3>Dulce Moscatel</h3>
+                    <p class="vino-tipo">Moscatel de Alejandría</p>
+                    <p class="vino-precio">S/ 110</p>
+                    <p class="vino-descripcion">Cosecha 2019. Envejecido 24 meses en barricas de roble.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ========================================
+         BLOQUE 4: FOOTER
+         ======================================== -->
+    <footer>
+        <p>© 1950 IGNIS - BODEGA SELECTA</p>
+        <marquee>🏷️ Descuento del 15% en compras mayores a S/200</marquee>
+    </footer>
+
+    </div>
+    
+    <!-- ========================================
+         BLOQUE 5: SCRIPTS
+         ======================================== -->
+    <script src="js/main.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/gestorUsuarios.js" defer></script>
+    <script src="js/vinos.js" defer></script>
+
+    </body>
+</html>

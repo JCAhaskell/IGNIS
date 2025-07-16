@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- ========================================
+     BLOQUE 1: CONFIGURACIÓN HEAD
+     ======================================== -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGNIS - Contacto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!-- ========================================
+     BLOQUE 2: NAVEGACIÓN Y AUTENTICACIÓN
+     ======================================== -->
+<body>
+    <!-- Información del usuario -->
+    <div id="userInfo" class="user-info">
+        <span id="userWelcome"></span>
+        <button class="logout-btn" onclick="cerrarSesion()" title="Cerrar Sesión">⏻</button>
+    </div>
+    
+    <!-- Estado de carga -->
+    <div id="loadingMessage" class="loading">
+        Verificando autenticación...
+    </div>
+    
+    <!-- Menú móvil -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="nav-menu" id="navMenu">
+        <a href="inicio.html">Inicio</a>
+        <a href="vinos.html">Vinos</a>
+        <a href="bodega.html">Bodega</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html" class="active">Contacto</a>
+        <a href="historia.html">Historia</a>
+        <a href="galeria.html">Galería</a>
+        <a href="faq.html">FAQ</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="blog.html">Blog</a>
+        <a href="premios.html">Premios</a>
+        <a href="elaboracion.html">Elaboración</a>
+    </nav>
+    
+    <div id="mainContent" class="protected-content">
+        
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo IGNIS" class="logo">
+        </div>
+        
+        <!-- ========================================
+             BLOQUE 3: CONTENIDO PRINCIPAL
+             ======================================== -->
+        <main>
+            <section class="contacto-section">
+                <h1>Contacto IGNIS</h1>
+                
+                <div id="authMessage" class="auth-message">
+                    <strong>¡Bienvenido!</strong> Estás autenticado como usuario registrado. 
+                    Tus datos de contacto se completarán automáticamente.
+                </div>
+                
+                <!-- ========================================
+                     BLOQUE 4: INFORMACIÓN DE CONTACTO
+                     ======================================== -->
+                <div class="contacto-info">
+                    <h2>Información de Contacto</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <h3>📍 Dirección</h3>
+                            <p>Viñedos IGNIS<br>
+                            Av. La Marina 2355<br>
+                            Cayma, Arequipa<br>
+                            Perú, CP 04017</p>
+                        </div>
+                        
+                        <div class="info-item">
+                            <h3>📞 Teléfonos</h3>
+                            <p>Oficina: +51 (54) 234-5678<br>
+                            WhatsApp: +51 987-654-321<br>
+                            Ventas: +51 (54) 555-0123</p>
+                        </div>
+                        
+                        <div class="info-item">
+                            <h3>✉️ Email</h3>
+                            <p>info@ignisvineyards.com<br>
+                            ventas@ignisvineyards.com<br>
+                            tours@ignisvineyards.com</p>
+                        </div>
+                        
+                        <div class="info-item">
+                            <h3>🕒 Horarios</h3>
+                            <p>Lunes a Viernes: 9:00 - 18:00<br>
+                            Sábados: 10:00 - 16:00<br>
+                            Domingos: 11:00 - 15:00<br>
+                            <em>Tours con cita previa</em></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ========================================
+                     PRIMERA ENTREGA - PUNTO D: FORMULARIOS COMPLETOS
+                     Formulario con todos los tipos de campos implementado
+                     ======================================== -->
+                <!-- ========================================
+                     BLOQUE 5: FORMULARIO DE CONTACTO
+                     ======================================== -->
+                <form id="contactoForm" class="contacto-form">
+                    <h2>Envíanos un Mensaje</h2>
+                    
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required readonly>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="asunto">Asunto *</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona un asunto</option>
+                            <option value="consulta-general">Consulta General</option>
+                            <option value="tours-catas">Tours y Catas</option>
+                            <option value="compra-vinos">Compra de Vinos</option>
+                            <option value="eventos-privados">Eventos Privados</option>
+                            <option value="distribucion">Distribución</option>
+                            <option value="prensa-medios">Prensa y Medios</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" required 
+                                placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="newsletter" name="newsletter" checked>
+                            Deseo recibir noticias y ofertas especiales de IGNIS
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                </form>
+                
+                <!-- Sección de redes sociales eliminada por solicitud del usuario -->
+            </section>
+        </main>
+        
+        <footer>
+            <div class="marquee">
+                <span>🍷 Descubre nuestros vinos premium • 🎉 Eventos especiales cada mes • 🏆 Premiados internacionalmente • 📞 Reserva tu cata: +51 (54) 234-5678 • </span>
+            </div>
+            <p>&copy; 2024 IGNIS. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+    </div>
+    
+    <!-- ========================================
+         BLOQUE 7: FOOTER
+         ======================================== -->
+    <footer>
+        <div class="marquee">
+            <span>🍷 Descubre nuestros vinos premium • 🎉 Eventos especiales cada mes • 🏆 Premiados internacionalmente • 📞 Reserva tu cata: +51 (54) 234-5678 • </span>
+        </div>
+        <p>&copy; 2024 IGNIS. Todos los derechos reservados.</p>
+    </footer>
+    
+    <!-- ========================================
+         BLOQUE 8: SCRIPTS
+         ======================================== -->
+    <script src="js/gestorUsuarios.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contacto.js"></script>
+    
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- ========================================
+     BLOQUE 1: CONFIGURACIÓN HEAD
+     ======================================== -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGNIS - Tienda</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!-- ========================================
+     BLOQUE 2: NAVEGACIÓN Y AUTENTICACIÓN
+     ======================================== -->
+<body>
+    <!-- Información del usuario -->
+    <div id="userInfo" class="user-info">
+        <span id="userWelcome"></span>
+        <button class="logout-btn" onclick="cerrarSesion()" title="Cerrar Sesión">⏻</button>
+    </div>
+    
+    <!-- Estado de carga -->
+    <div id="loadingMessage" class="loading">
+        Verificando autenticación...
+    </div>
+    
+    <!-- Menú móvil -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="nav-menu" id="navMenu">
+        <a href="inicio.html">Inicio</a>
+        <a href="vinos.html">Vinos</a>
+        <a href="bodega.html">Bodega</a>
+        <a href="tienda.html" class="active">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="historia.html">Historia</a>
+        <a href="galeria.html">Galería</a>
+        <a href="faq.html">FAQ</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="blog.html">Blog</a>
+        <a href="premios.html">Premios</a>
+        <a href="elaboracion.html">Elaboración</a>
+    </nav>
+    
+    <div id="mainContent" class="protected-content">
+        
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo IGNIS" class="logo">
+        </div>
+        
+        <!-- ========================================
+             BLOQUE 3: CONTENIDO PRINCIPAL
+             ======================================== -->
+        <main>
+            <section class="tienda-section">
+                <h1>Tienda IGNIS</h1>
+                <p>Realiza tu pedido de vinos premium</p>
+                
+                <!-- Formulario de pedido -->
+                <form id="pedidoForm" class="pedido-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipoVino">Tipo de vino:</label>
+                        <select id="tipoVino" name="tipoVino" required>
+                            <option value="">Selecciona un vino</option>
+                            <option value="tinto">Vino Tinto</option>
+                            <option value="blanco">Vino Blanco</option>
+                            <option value="rosado">Vino Rosado</option>
+                            <option value="espumoso">Vino Espumoso</option>
+                            <option value="dulce">Vino Dulce</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" max="50" required>
+                    </div>
+                    <button type="submit" class="btn-comprar">Realizar Pedido</button>
+                </form>
+                
+                <!-- Contacto alternativo -->
+                <div class="whatsapp-link">
+                    <p>¿Prefieres ordenar por WhatsApp?</p>
+                    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">
+                        📱 Contactar por WhatsApp
+                    </a>
+                </div>
+            </section>
+        </main>
+        
+        <!-- ========================================
+             BLOQUE 4: FOOTER
+             ======================================== -->
+        <footer>
+            <div class="marquee">
+                <span>🍷 Vinos premium de calidad excepcional • Elaborados con pasión y tradición • Envíos a toda España • ¡Descubre nuestros vinos únicos! 🍷</span>
+            </div>
+            <p>&copy; 2024 IGNIS. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+    
+    <!-- ========================================
+         BLOQUE 5: SCRIPTS
+         ======================================== -->
+    <script src="js/gestorUsuarios.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tienda.js"></script>
+</body>
+</html>
